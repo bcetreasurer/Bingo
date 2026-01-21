@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- PayPal SDK (REQUIRED) -->
-  <script 
-    src="https://www.paypal.com/sdk/js?client-id=BAAVTqg4muKlG8tZV3-fkMJukCTA2h6eQRSNVgh0dd1ehjXthkTdyac7xe8Nw9JgBbAZgeDo_f9TVEVNKQ&components=hosted-buttons&enable-funding=venmo&currency=USD">
-  </script>
+<script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="X6LSTQMQDUYDL"></script>
 
   <style>
     body {
@@ -67,41 +65,25 @@
   <div class="buttons">
 
     <!-- Button 1 -->
-<div id="paypal-container-W7AHGRHRNSFS4"></div>
+<paypal-add-to-cart-button data-id="DLXA6XTPLLWVY"></paypal-add-to-cart-button>
 <script>
-  paypal.HostedButtons({
-    hostedButtonId: "W7AHGRHRNSFS4",
-  }).render("#paypal-container-W7AHGRHRNSFS4")
+  cartPaypal.AddToCart({ id: "DLXA6XTPLLWVY" })
 </script>
 
     <!-- Button 2 -->
-<div id="paypal-container-42FTB72VMHHX8"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "42FTB72VMHHX8",
-  }).render("#paypal-container-42FTB72VMHHX8")
-</script>
+
 
     <!-- Button 3 -->
-<div id="paypal-container-WGRA7QJJN3N2E"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "WGRA7QJJN3N2E",
-  }).render("#paypal-container-WGRA7QJJN3N2E")
-</script>
+
     
     <!-- Button 4 -->
-    <div id="paypal-container-8EHDCJBAQVS8N"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "8EHDCJBAQVS8N",
-  }).render("#paypal-container-8EHDCJBAQVS8N")
-</script>
 
-    <!-- Button 4 (Hosted Button) -->
-    <div class="box">
-      <div id="paypal-container-CXYT6Q5GAV6KQ"></div>
-    </div>
+
+    <!-- view cart -->
+<paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+<script>
+  cartPaypal.Cart({ id: "pp-view-cart" })
+</script>
 
   </div>
 
